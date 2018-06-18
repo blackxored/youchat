@@ -1,0 +1,59 @@
+{
+  "name": "YouChat",
+  "version": "0.0.0-development",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "lint": "eslint src",
+    "flow": "flow",
+    "postinstall": "rm node_modules/styled-system/.babelrc"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.13.1",
+    "glamorous-native": "^1.4.0",
+    "intl": "^1.2.5",
+    "moment": "^2.22.2",
+    "qs": "^6.5.2",
+    "ramda": "^0.25.0",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-google-signin": "^0.12.0",
+    "react-native-material-ui": "^1.22.3",
+    "react-native-spinkit": "^1.1.1",
+    "react-native-vector-icons": "^4.6.0",
+    "react-native-youtube": "^1.1.0",
+    "react-navigation": "^2.2.5",
+    "recompose": "^0.27.1",
+    "rxjs": "^6.2.1",
+    "styled-system": "^2.2.9"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "23.0.1",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "^0.67.0",
+    "jest": "23.1.0",
+    "prettier": "^1.13.5",
+    "prop-types": "^15.6.1",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?react-native|glamorous-native)"
+    ]
+  }
+}
